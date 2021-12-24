@@ -1,0 +1,10 @@
+"""Take input from the user until the input does not exceeds 100 and when it exceeds 100 print()you have printed a 
+number greater than 100)"""
+while(True):
+  num1 = input("enter number to print : ")
+  if str(num1).isnumeric() and int(num1)<100:
+    print("TRY aGAIN!")
+    continue
+  if num1.isnumeric() and int(num1)>100:
+    print("Congratulations!!! You have printed a number grater than 100")
+    break
