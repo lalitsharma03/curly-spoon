@@ -1,0 +1,5 @@
+#list having numbers as well as letters and we want ot display only numbers greater than 6
+list1=["Larry","Harry","Marry",1,5 ,6 ,8 ,10,22 ,40,300]
+for items in list1 :
+  if str(items).isnumeric() and items>6 :
+    print(items)
