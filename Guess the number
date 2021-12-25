@@ -1,0 +1,23 @@
+"""Take a number to be guessed and make a programme such that it prints that the number entered by us is greater or smaller than the desired number 
+and limit the number of guesses to be 9 : if tbe person does not guesses the programme in 9 attempts , then print : game over and if he does the right 
+guess ,print :you guessed the right number and at last print the number of attempts used in guessing"""
+i=0
+number=18
+# print(type(number))
+while(True) :
+    i=i+1
+    print("The number of guesses left are", 10-i )
+    n1=int(input("Enter the number you guess : "))
+    if n1<number :
+        print("number is less than the desired number ")
+    if n1>number :
+        print("number is greater than the desired number ")
+    if n1==number :
+        print("Yay! you guessed the right number ")
+        print("The number of guesses you took are :" , i)
+        break
+    elif i>10 :
+        print("Game Over ,You Ran out of Tries")
+        break
+    continue
+ 
