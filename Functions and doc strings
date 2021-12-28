@@ -1,0 +1,11 @@
+a=2
+b=5
+c=sum((a,b)) #sum is a built  in function
+print(c)
+def function1(a,b) :
+  """"This is a fumnction created to find average of two numbers , input should include only two numbers"""
+  average=(a+b)/2
+  return average
+print(function1.__doc__)
+n=function1(5,7)
+print(n)
